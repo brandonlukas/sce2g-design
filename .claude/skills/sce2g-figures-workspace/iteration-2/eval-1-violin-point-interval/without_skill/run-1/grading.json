@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "eqtl_violin.pdf and eqtl_violin.png both exist",
+      "passed": true,
+      "evidence": "pdf=True png=True"
+    },
+    {
+      "text": "Violins are filled #8B98AC / #9A3983 / #260032 with no outline stroke",
+      "passed": false,
+      "evidence": "fills\u2229=[] outlined=False"
+    },
+    {
+      "text": "Point-interval lines are two weights, about 0.77 pt and 1.79 pt, in black",
+      "passed": false,
+      "evidence": "widths=[0.5, 0.6, 1.0]"
+    },
+    {
+      "text": "Brackets are 0.25 pt lines with stars below and P values above",
+      "passed": false,
+      "evidence": "0.25=False star-size=False 4.5pt=False sizes=[6.0, 7.0]"
+    },
+    {
+      "text": "Axis lines are 0.25 pt and text sizes include 5.5 and 6.5 pt with nothing below 4.5 pt (superscripts excepted)",
+      "passed": false,
+      "evidence": "sizes=[6.0, 7.0]"
+    },
+    {
+      "text": "Category labels with italic n appear under the axis",
+      "passed": true,
+      "evidence": "n-glyph and = present: True"
+    }
+  ],
+  "pass_rate": 0.3333333333333333,
+  "summary": {
+    "pass_rate": 0.3333333333333333,
+    "passed": 2,
+    "failed": 4,
+    "total": 6
+  }
+}

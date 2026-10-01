@@ -1,0 +1,156 @@
+---
+name: sce2g-figures
+description: Make, restyle, or reproduce a figure panel in the scE2G paper style (Sheth, Qiu et al., Nat Genet 2026) or this lab's genomics figure style. ALWAYS pick this skill, ahead of any generic chart/dataviz/plotting skill, when the request mentions scE2G, Sheth et al., "like Fig 2c"/"panel 5h"/"the paper's look", theme_sce2g, tokens.json, or asks that a ggplot/matplotlib panel sit beside existing paper panels. Also pick it, even with no paper named, for typical lab panels such as locus plots with enhancer–TSS arcs over ATAC tracks, UMAP triptychs with arrow-only axes, motif logos with ref/alt alleles, AUPRC or precision bars/curves per predictor, GWAS enrichment point-range/beeswarm plots, heatmaps, violins, SVG workflow schematics. It is the only source of the measured palette, fonts, stroke weights, panel sizes, ggplot2 theme, svgkit and PDF verifier; generic chart advice will produce the wrong look. Not for non-genomics charts, pure stats code, or running scripts without changing a figure.
+---
+
+# scE2G figure style
+
+You are reproducing a *measured* design system, not a vibe. Every colour, stroke
+width, font size and panel size below was extracted from the published PDF's
+vector content and verified by re-measuring our own renders. Follow the numbers
+and the panels will sit next to the paper's without looking out of place; drift
+from them and the difference is visible at print size even when it is
+invisible on screen.
+
+## 1. Decide the tool
+
+| Need | Tool | Why |
+|---|---|---|
+| Any panel driven by data (curves, bars, violins, points, heatmaps, locus tracks, logos) | **R + ggplot2** with `theme_sce2g()` | The theme encodes the measured axes, ticks, type and unit fixes; patchwork sets exact panel sizes. |
+| Conceptual schematic / cartoon (workflow boxes, arrows, cell cartoons, tables of glyphs) | **Python + `svgkit.py`** → SVG (PDF/PNG via Inkscape if installed) | Schematics are compositions in page points; an SVG emitter with the paper's arrow, container and text primitives is simpler and exact. |
+| Python-only environments, quick data plots | **matplotlib** with `assets/matplotlib_rc.py` | Same tokens, same open axes; use only when R is unavailable. |
+
+## 2. Set up the helpers (once per project)
+
+The helpers live in `assets/`. If the working directory is the `sce2g-design`
+repo, use its `R/theme_sce2g.R`, `tokens.json` and `figures/svgkit.py`
+directly. Otherwise copy them in:
+
+```bash
+SK=<path to this skill>
+mkdir -p R figures && cp $SK/assets/tokens.json . && cp $SK/assets/theme_sce2g.R R/ && cp $SK/assets/svgkit.py figures/
+```
+
+`theme_sce2g.R` finds `tokens.json` by walking up from the working directory
+(or `SCE2G_ROOT`). Requirements: R with ggplot2 ≥ 3.5, dplyr, patchwork,
+jsonlite, svglite (SVG) and cairo (PDF/PNG), plus ggseqlogo for logos and ggbeeswarm for
+swarms; Python 3 (plus Inkscape on PATH for SVG → PDF/PNG) for the schematic route; Helvetica (or Arial) installed.
+
+## 3. Build the panel
+
+Read `references/recipes.md` for the component you are making — it has a
+working snippet for each panel type, measured sizes, and a pointer to the full
+reference implementation. The non-negotiables that apply to every panel:
+
+**Canvas.** Open axes (left + bottom only), 0.25 pt black, outward 2.4 pt
+ticks, no grid, no frame, white background: `theme_sce2g()` gives all of this.
+Set the *panel* size explicitly (`patchwork::plot_layout(widths = unit(w, "mm"),
+heights = unit(h, "mm"))`) instead of letting axis text decide it; the
+component table in the design system lists the sizes the paper used.
+
+**Type.** Helvetica, sentence case. 6.5 pt axis titles and panel titles,
+5.5 pt tick labels and legend entries, 4.5 pt annotations (P values, counts),
+8.5 pt bold significance stars, 9.3 pt bold panel letters set *outside* the
+plot. Italic *n*, *P* and gene names; superscripts for model variants
+(scE2G^Multiome) at 0.7×. Never below 4.5 pt. Set text with
+`size = pt / .pt` — that one is exact.
+
+**Colour.** Fixed palette with fixed index numbers per predictor (`tokens.json`
+→ `color.predictor`; `scale_colour_predictor()` in R). Methods from the paper
+are saturated jewel tones, other methods a desaturated earth ramp, baselines
+greys and navies. Categories that are ordinal use a single-hue lightness ramp
+(darkest = most specific). Sequential scales are single-hue ramps (red, blue,
+purple, teal); never rainbow or viridis. Redundant encoding is mandatory:
+every series also carries its number or label, because the two headline
+colours collapse under deuteranopia.
+
+**Strokes and marks.** Curves 0.42 pt; reference lines 0.5 pt dashed 2/2 pt
+(black = chosen threshold, `#AEAEAE` = chance, series colour = competing
+model); error bars 0.25 pt with caps ~40 % of the bar; bars fill-only, touching
+within a group. Points are solid discs with no outline. The paper uses one
+arrow shape everywhere: a stem into a swept head with a notched back edge
+(`annotate_arrow_sce2g()` / `arrow_grob_sce2g()` in R, `Canvas.arrow_poly()`
+in svgkit).
+
+**Axis ranges.** Bars, areas and tracks are anchored at zero with no gap below
+and 5 % headroom (`scale_y_anchored()`); points, curves, violins and box plots
+keep ggplot's default 5 % on both ends, even for quantities bounded at 0;
+tiles and logos have no expansion at all. Fractions break at 0, 0.25, 0.50,
+0.75, 1.00 (`scale_*_fraction()`).
+
+**Legends and stats.** One legend per figure in whitespace, entries numbered
+"(1) scE2G^Multiome"; reference lines and points that share a legend share one
+key row. Brackets 0.25 pt with short down-ticks, stars just below the bar, the
+exact *P* above it in 4.5 pt with a plotmath superscript (`sig_bracket()`).
+
+## 4. ggplot2 unit traps (read before writing sizes)
+
+These are the errors that made every earlier panel 25 % too thin or too small
+until they were measured:
+
+- **Line widths.** ggplot's `linewidth` unit draws at 0.75 mm, not 1 mm,
+  because R's lwd is 1/96 inch. Use `linewidth = pt_mm(x)` (defined as
+  `x / .pt / 0.75`) for every stroke.
+- **Point sizes.** A disc of diameter `d` pt is
+  `geom_point(size = d / .pt / 0.75, shape = 16, stroke = 0)`. The default
+  shape 19 adds an outline you did not ask for.
+- **Dashes.** `lty` digits are multiples of max(lwd, 1) = 0.75 pt for
+  hairlines, so a 2/2 pt dash is `"33"` (2.25 pt), the 2.5/0.85 leader is
+  `"31"`, box-plot whiskers are `"34"` with `lineend = "round"`. Never `"22"`
+  or `"dashed"` at these weights — they print as dots.
+- **Text** is the exception: `size = pt / .pt` is exact; plotmath
+  superscripts come out at the paper's 0.7×.
+- **Output.** Deliver every panel as **SVG + PDF + 900 dpi PNG**:
+  `save_panel(p, "figures/name", width_mm, height_mm)` (no extension) writes
+  all three; svgkit's `Canvas.save()` does the same for schematics. SVG is the
+  editable working format, the PNG is for review at 300 % zoom. PNGs go
+  through cairo, not ragg, which silently drops glyphs under ~8 px.
+- **Composition in points.** Dense labelled panels and legends are easiest as
+  a `theme_void()` plot in absolute point coordinates, one data unit per
+  point, y *negated* (page y grows downward and `coord_cartesian` silently
+  sorts reversed limits). `vjust = 0` puts text on its baseline; anchor
+  multi-line blocks at their tops with `vjust = 1` so descenders do not shift
+  lines.
+
+## 5. Schematics with svgkit
+
+`Canvas(ox, oy, w, h)` works in page points and emits mm-based SVG. Primitives:
+`text` (with 1.2× line pitch), `rect`, `poly`, `path`, `line`, `circle`,
+`arc`, `arrow_poly(stem=…)` for filled horizontal arrows (gene arrows,
+glyphs) and `connector(pts)` for the black connectors between elements — the
+paper's arrow scales with its stem: head 4 × stem long, 3.25 × stem wide,
+notch 1.2 × stem. Connector tips sit *on* the target's edge and connectors
+are added last so no container paints over them. Style rules: grey `#DEDFE1`
+containers with no border and 6 pt padding frame *data and computed things* —
+tables, signal tracks, feature boxes — while cartoon embeddings (UMAP cell
+clouds) always sit directly on white with a small notched-arrow axis pair
+(Fig. 1a, 3b); numbered stage headings "(1) …" in 6.5 pt; at most three
+stroke weights (0.25 hairline, 0.9 connector, 1.85 emphasis); cartoon cells
+as 3.2 pt dots in pure RGB only when the colour carries no data meaning;
+meta-cells as `#D3D3D3` blobs drawn behind the dots.
+See recipe "Schematic" and the reference implementations `fig1a_schematic.py`,
+`fig2a_table.py`, `fig3b_strategies.py` — all bundled and runnable in
+`references/examples/` (its README shows how).
+
+## 6. Verify before you hand it over
+
+Rendered ≠ correct. Convert the PDF to SVG and measure it:
+
+```bash
+python <skill>/scripts/measure_svg.py out.pdf            # strokes, dashes, text sizes, disc diameters
+python <skill>/scripts/measure_svg.py ref.pdf --bbox x0 y0 x1 y1 --page 7   # a region of a reference page
+```
+
+Check that axes read 0.25 pt, curves 0.42, dashes 2.25, tick labels 5.5,
+titles 6.5, and that discs are the diameter you intended. `references/verification.md`
+explains how to read the output and how to digitise a reference panel's data.
+Then look at the PNG at 100 % and at 300 % for clipped marks, overlapping
+superscripts and labels that collide.
+
+## 7. Where things are
+
+- `references/recipes.md` — one snippet per component, sizes, reference scripts. **Read this next.**
+- `references/design-system.md` — the full rulebook with every measured value and the why behind each.
+- `references/verification.md` — measuring PDFs, digitising reference data, the print-scale caveat.
+- `assets/theme_sce2g.R`, `assets/tokens.json`, `assets/svgkit.py`, `assets/matplotlib_rc.py`.
+- `scripts/measure_svg.py` — the measurement tool.

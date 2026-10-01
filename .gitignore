@@ -1,0 +1,4 @@
+__pycache__/
+*.pid
+Rplots.pdf
+.DS_Store

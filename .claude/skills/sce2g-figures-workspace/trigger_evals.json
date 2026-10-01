@@ -1,0 +1,82 @@
+[
+  {
+    "query": "I have results/auprc_by_distance.csv with columns predictor, bin, auprc, ci_lo, ci_hi (predictors are the scE2G numbering 1-15). can you make the grouped bar panel like Fig 2c for our K562 held-out set? pdf + png please",
+    "should_trigger": true
+  },
+  {
+    "query": "make me a locus plot for MYC in our BMMC multiome predictions \u2014 arcs from enhancers to the TSS colored by score, ATAC track underneath, gene models on top. same look as the scE2G paper's Fig 1b. data is in data/myc_links.tsv and data/myc_atac.bw",
+    "should_trigger": true
+  },
+  {
+    "query": "we're submitting to nature genetics and my supervisor wants all the panels to match the house style we set up (tokens.json / theme_sce2g.R in this repo). start with a violin plot of eqtl enrichment across the three category matches in tables/eqtl_enrich.csv, with wilcoxon brackets",
+    "should_trigger": true
+  },
+  {
+    "query": "draw a conceptual overview schematic of our pipeline for figure 1: (1) snATAC + snRNA input, (2) peak-gene pairing within 1 Mb, (3) the GBM model, (4) cell-type-resolved predictions. boxes and arrows, print size ~180 mm wide, publication quality",
+    "should_trigger": true
+  },
+  {
+    "query": "quick one: plot the umap in embeddings/pbmc_umap.csv colored by celltype, and next to it the same umap colored by GATA1 expression, styled like the sce2g figure 3f triptych (no axes, just the little arrow L)",
+    "should_trigger": true
+  },
+  {
+    "query": "can u redo this ggplot so it looks like the scE2G figures? it's a scatter of AUPRC vs log10 fragments per cell, currently default theme_grey and it looks awful next to the other panels",
+    "should_trigger": true
+  },
+  {
+    "query": "I need a motif logo for the CTCF PWM (jaspar MA0139.1) with the ref/alt alleles of rs12345 written under it and an arrow at the variant, like panel 5h in Sheth et al 2026",
+    "should_trigger": true
+  },
+  {
+    "query": "Build a 46x46 heatmap of jaccard similarity between cell-type prediction sets (results/jaccard.csv, symmetric matrix) with the dataset side bar and a red color ramp, nature-style, 4 pt labels are fine",
+    "should_trigger": true
+  },
+  {
+    "query": "ranked horizontal bars of PoPS scores for the genes near rs7696969 (genes.csv: gene, pops, prioritized) in the paper style, highlight the top two",
+    "should_trigger": true
+  },
+  {
+    "query": "the point-range dot plot with CIs for GWAS enrichment per cell type, islet cell types dark purple, everything else as a grey beeswarm row below \u2014 like fig 5d. data in enrich/glucose.tsv",
+    "should_trigger": true
+  },
+  {
+    "query": "what's the difference between Kendall and Spearman correlation and why would the scE2G paper have picked Kendall for single-cell atac x expression?",
+    "should_trigger": false
+  },
+  {
+    "query": "write me an R function that computes AUPRC and precision at a fixed recall threshold from a data frame of scores and labels, with a unit test",
+    "should_trigger": false
+  },
+  {
+    "query": "my ggplot2 script errors with 'object .pt not found' when I run it via Rscript but works in RStudio, any idea why?",
+    "should_trigger": false
+  },
+  {
+    "query": "summarize the methods section of refs/sce2g-2026.pdf, specifically how they built the CRISPR benchmark and what the positive/negative counts were",
+    "should_trigger": false
+  },
+  {
+    "query": "make a quick interactive plotly dashboard of our sequencing QC metrics (reads per cell, TSS enrichment, fraction in peaks) so the wet lab can filter samples",
+    "should_trigger": false
+  },
+  {
+    "query": "convert figures/fig3g_boxbar.pdf to a 300 dpi tiff for the journal upload, and also split the PDF pages of the supplement into individual files",
+    "should_trigger": false
+  },
+  {
+    "query": "design a landing page mockup for our lab website with a hero image, three feature cards and a publications list",
+    "should_trigger": false
+  },
+  {
+    "query": "i have a matplotlib line chart of monthly revenue for the finance team, can you add a moving average and annotate the peak quarter",
+    "should_trigger": false
+  },
+  {
+    "query": "which colors from tokens.json are safe to use for text on white? just list the hex codes and their contrast ratios",
+    "should_trigger": false
+  },
+  {
+    "query": "run the fig4a_depth.R script and tell me if it still works after the ggplot2 upgrade; fix any deprecation warnings",
+    "should_trigger": false
+  }
+]

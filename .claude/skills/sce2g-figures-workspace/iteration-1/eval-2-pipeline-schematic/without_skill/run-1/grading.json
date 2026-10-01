@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "pipeline_schematic.svg exists (pdf/png optional)",
+      "passed": true,
+      "evidence": "svg=True"
+    },
+    {
+      "text": "Containers use #DEDFE1 without a border and the model box is #9C4787",
+      "passed": false,
+      "evidence": "container=False model box=False"
+    },
+    {
+      "text": "The gene arrow is #54AB58 and arrowheads are filled polygons (the notched shape), not marker triangles",
+      "passed": false,
+      "evidence": "gene=False polygons=0 markers=False"
+    },
+    {
+      "text": "At most three distinct stroke widths are used, from the 0.25 / 0.9 / 1.85 pt family",
+      "passed": false,
+      "evidence": "widths(mm or pt)=[] -> pt=[]"
+    },
+    {
+      "text": "Stage headings are numbered '(1)', '(2)', '(3)' at about 6.5 pt in Helvetica/Arial",
+      "passed": false,
+      "evidence": "numbered=False 6.5pt=False helv=True sizes=[]"
+    },
+    {
+      "text": "The cartoon embedding (cell dots) sits on white, not inside a grey container",
+      "passed": false,
+      "evidence": "cells=0 inside grey rects=0"
+    }
+  ],
+  "pass_rate": 0.16666666666666666,
+  "summary": {
+    "pass_rate": 0.16666666666666666,
+    "passed": 1,
+    "failed": 5,
+    "total": 6
+  }
+}

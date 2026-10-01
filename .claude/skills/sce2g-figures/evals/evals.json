@@ -1,0 +1,57 @@
+{
+  "skill_name": "sce2g-figures",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I have precision-recall curves for four predictors in pr_curves.csv (columns predictor_id, recall, precision; the ids are the scE2G paper's predictor numbers 1, 2, 5 and 15). Make a publication PR-curve panel in the scE2G figure style: square panel, dashed line at the operating recall of 0.7, dashed chance line at precision 0.06, curves labelled by their number at the right end, title 'CRISPR benchmark (training)'. Save as pr_panel.pdf and pr_panel.png.",
+      "expected_output": "A ggplot2 (or matplotlib) PDF+PNG with 0.25 pt open axes, 0.42 pt curves in the fixed predictor palette (#792374, #006479, #0096A0, #404040), 0.5 pt 2/2-dashed reference lines, quarter breaks labelled 0/0.25/0.50/0.75/1.00, Helvetica 5.5/6.5 pt text, ~40 mm square panel.",
+      "files": [
+        "files/pr_curves.csv"
+      ],
+      "assertions": [
+        "pr_panel.pdf and pr_panel.png both exist",
+        "Axis lines and ticks are 0.25 pt black in the PDF",
+        "Curves are 0.42 pt strokes in the fixed predictor colours (#792374, #006479, #0096A0, #404040)",
+        "Reference lines are 0.5 pt with a 2 to 2.25 pt dash",
+        "Text sizes are 5.5 pt tick labels and 6.5 pt titles, nothing below 4.5 pt",
+        "Curve index numbers are drawn at the curve ends in the curve's own colour",
+        "An SVG is saved alongside and the PNG is at least 800 dpi",
+        "The recall axis title carries the number of positives, \"Recall (n = \u2026)\""
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "eqtl_enrichment.csv has one row per eQTL variant-biosample pair with columns category (unmatched / same_lineage / same_cell_type) and enrichment. Plot the three distributions as violins with a median point-interval, in the style of Fig. 5b of the scE2G paper, with significance brackets between the groups (use a Wilcoxon test and show the P values), category labels with n under the axis, and save as eqtl_violin.pdf and .png.",
+      "expected_output": "Three violins filled #8B98AC / #9A3983 / #260032 with no outline, black point-interval (3 pt dot, thick 66 % and thin 95 % lines), 0.25 pt brackets with stars below and P values above in 4.5 pt, y axis from 0 with default padding, ~35 x 50 mm panel, Helvetica.",
+      "files": [
+        "files/eqtl_enrichment.csv"
+      ],
+      "assertions": [
+        "eqtl_violin.pdf and eqtl_violin.png both exist",
+        "Violins are filled #8B98AC / #9A3983 / #260032 with no outline stroke",
+        "Point-interval lines are two weights, about 0.77 pt and 1.79 pt, in black",
+        "Brackets are 0.25 pt lines with stars below and P values above",
+        "Axis lines are 0.25 pt and text sizes include 5.5 and 6.5 pt with nothing below 4.5 pt",
+        "Category labels with italic n appear under the axis",
+        "An SVG is saved alongside and the PNG is at least 800 dpi",
+        "Each n line sits directly under its own label (n rows are not all on one shared baseline)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Draw a conceptual schematic (no data) of our pipeline in the scE2G paper's schematic style: three numbered stages left to right \u2014 (1) single-cell multiome data (a small cartoon UMAP of cells), (2) candidate enhancer-gene pairs (a signal peak with a gene arrow), (3) model prediction (a highlighted model box) \u2014 connected by arrows. Output an SVG plus PDF/PNG at about 120 x 45 mm, named pipeline_schematic.",
+      "expected_output": "An SVG built in page points: grey #DEDFE1 containers without borders, 6.5 pt numbered headings, black elbow/straight connectors ~0.9 pt with the notched arrowhead, a #9C4787 model box, cartoon cells as ~3 pt RGB dots, gene arrow in #54AB58, Helvetica text, at most three stroke weights.",
+      "files": [],
+      "assertions": [
+        "pipeline_schematic.svg exists (pdf/png optional)",
+        "Containers use #DEDFE1 without a border and the model box is #9C4787",
+        "The gene arrow is #54AB58 and arrowheads are filled polygons (the notched shape), not marker triangles",
+        "At most three distinct stroke widths are used, from the 0.25 / 0.9 / 1.85 pt family",
+        "Stage headings are numbered '(1)', '(2)', '(3)' at about 6.5 pt in Helvetica/Arial",
+        "The cartoon embedding (cell dots) sits on white, not inside a grey container",
+        "The PNG is at least 800 dpi",
+        "Connector heads end on the container edge (no intrusion > 1 pt) and are drawn above the containers"
+      ]
+    }
+  ]
+}

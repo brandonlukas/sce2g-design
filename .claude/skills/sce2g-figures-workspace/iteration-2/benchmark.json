@@ -1,0 +1,353 @@
+{
+  "metadata": {
+    "skill_name": "sce2g-figures",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-05T14:38:03Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 66.0,
+        "tokens": 48981,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "pr_panel.pdf and pr_panel.png both exist",
+          "passed": true,
+          "evidence": "pdf=True png=True"
+        },
+        {
+          "text": "Axis lines and ticks are 0.25 pt black in the PDF",
+          "passed": true,
+          "evidence": "strokes=[((0.25, '#000000'), 12), ((0.42, '#792374'), 2), ((0.42, '#006479'), 2), ((0.42, '#0096a0'), 2), ((0.42, '#404040'), 2), ((0.5, '#aeaeae'), 1)]"
+        },
+        {
+          "text": "Curves are 0.42 pt strokes in the fixed predictor colours (#792374, #006479, #0096A0, #404040)",
+          "passed": true,
+          "evidence": "0.42 pt colours=['#006479', '#0096a0', '#404040', '#792374']"
+        },
+        {
+          "text": "Reference lines are 0.5 pt with a 2 to 2.25 pt dash",
+          "passed": true,
+          "evidence": "dashes=[(('2.25,.75', 0.42), 4), (('2.25,2.25', 0.5), 2)]"
+        },
+        {
+          "text": "Text sizes are 5.5 pt tick labels and 6.5 pt titles, nothing below 4.5 pt",
+          "passed": true,
+          "evidence": "sizes=[4.5, 5.5, 6.5]"
+        },
+        {
+          "text": "Curve index numbers are drawn at the curve ends in the curve's own colour",
+          "passed": true,
+          "evidence": "coloured glyphs=5"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 126.6,
+        "tokens": 56123,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "eqtl_violin.pdf and eqtl_violin.png both exist",
+          "passed": true,
+          "evidence": "pdf=True png=True"
+        },
+        {
+          "text": "Violins are filled #8B98AC / #9A3983 / #260032 with no outline stroke",
+          "passed": true,
+          "evidence": "fills\u2229=['#260032', '#8b98ac', '#9a3983'] outlined=False"
+        },
+        {
+          "text": "Point-interval lines are two weights, about 0.77 pt and 1.79 pt, in black",
+          "passed": true,
+          "evidence": "widths=[0.25, 0.77, 1.07, 1.79]"
+        },
+        {
+          "text": "Brackets are 0.25 pt lines with stars below and P values above",
+          "passed": true,
+          "evidence": "0.25=True star-size=True 4.5pt=True sizes=[3.15, 4.5, 5.5, 6.5, 8.5]"
+        },
+        {
+          "text": "Axis lines are 0.25 pt and text sizes include 5.5 and 6.5 pt with nothing below 4.5 pt (superscripts excepted)",
+          "passed": true,
+          "evidence": "sizes=[3.15, 4.5, 5.5, 6.5, 8.5]"
+        },
+        {
+          "text": "Category labels with italic n appear under the axis",
+          "passed": true,
+          "evidence": "n-glyph and = present: True"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 149.3,
+        "tokens": 69345,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "pipeline_schematic.svg exists (pdf/png optional)",
+          "passed": true,
+          "evidence": "svg=True"
+        },
+        {
+          "text": "Containers use #DEDFE1 without a border and the model box is #9C4787",
+          "passed": true,
+          "evidence": "container=True model box=True"
+        },
+        {
+          "text": "The gene arrow is #54AB58 and arrowheads are filled polygons (the notched shape), not marker triangles",
+          "passed": true,
+          "evidence": "gene=True polygons=9 markers=False"
+        },
+        {
+          "text": "At most three distinct stroke widths are used, from the 0.25 / 0.9 / 1.85 pt family",
+          "passed": true,
+          "evidence": "widths(mm or pt)=[0.09, 0.18, 0.33] -> pt=[0.26, 0.51, 0.94]"
+        },
+        {
+          "text": "Stage headings are numbered '(1)', '(2)', '(3)' at about 6.5 pt in Helvetica/Arial",
+          "passed": true,
+          "evidence": "numbered=True 6.5pt=True helv=True sizes=[1.587, 1.94, 2.293]"
+        },
+        {
+          "text": "The cartoon embedding (cell dots) sits on white, not inside a grey container",
+          "passed": true,
+          "evidence": "cells=42 inside grey rects=0"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.3333333333333333,
+        "passed": 2,
+        "failed": 4,
+        "total": 6,
+        "time_seconds": 53.3,
+        "tokens": 33462,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "pr_panel.pdf and pr_panel.png both exist",
+          "passed": true,
+          "evidence": "pdf=True png=True"
+        },
+        {
+          "text": "Axis lines and ticks are 0.25 pt black in the PDF",
+          "passed": false,
+          "evidence": "strokes=[((0.5, '#000000'), 14), ((1.0, '#d62728'), 1), ((1.0, '#1f77b4'), 1), ((1.0, '#2ca02c'), 1), ((1.0, '#7f7f7f'), 1), ((0.5, '#808080'), 1)]"
+        },
+        {
+          "text": "Curves are 0.42 pt strokes in the fixed predictor colours (#792374, #006479, #0096A0, #404040)",
+          "passed": false,
+          "evidence": "0.42 pt colours=[]"
+        },
+        {
+          "text": "Reference lines are 0.5 pt with a 2 to 2.25 pt dash",
+          "passed": true,
+          "evidence": "dashes=[(('1.85,.8', 0.5), 2)]"
+        },
+        {
+          "text": "Text sizes are 5.5 pt tick labels and 6.5 pt titles, nothing below 4.5 pt",
+          "passed": false,
+          "evidence": "sizes=[6.0, 7.0, 8.4]"
+        },
+        {
+          "text": "Curve index numbers are drawn at the curve ends in the curve's own colour",
+          "passed": false,
+          "evidence": "coloured glyphs=0"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.3333333333333333,
+        "passed": 2,
+        "failed": 4,
+        "total": 6,
+        "time_seconds": 132.0,
+        "tokens": 34397,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "eqtl_violin.pdf and eqtl_violin.png both exist",
+          "passed": true,
+          "evidence": "pdf=True png=True"
+        },
+        {
+          "text": "Violins are filled #8B98AC / #9A3983 / #260032 with no outline stroke",
+          "passed": false,
+          "evidence": "fills\u2229=[] outlined=False"
+        },
+        {
+          "text": "Point-interval lines are two weights, about 0.77 pt and 1.79 pt, in black",
+          "passed": false,
+          "evidence": "widths=[0.5, 0.6, 1.0]"
+        },
+        {
+          "text": "Brackets are 0.25 pt lines with stars below and P values above",
+          "passed": false,
+          "evidence": "0.25=False star-size=False 4.5pt=False sizes=[6.0, 7.0]"
+        },
+        {
+          "text": "Axis lines are 0.25 pt and text sizes include 5.5 and 6.5 pt with nothing below 4.5 pt (superscripts excepted)",
+          "passed": false,
+          "evidence": "sizes=[6.0, 7.0]"
+        },
+        {
+          "text": "Category labels with italic n appear under the axis",
+          "passed": true,
+          "evidence": "n-glyph and = present: True"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.16666666666666666,
+        "passed": 1,
+        "failed": 5,
+        "total": 6,
+        "time_seconds": 65.9,
+        "tokens": 35287,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "pipeline_schematic.svg exists (pdf/png optional)",
+          "passed": true,
+          "evidence": "svg=True"
+        },
+        {
+          "text": "Containers use #DEDFE1 without a border and the model box is #9C4787",
+          "passed": false,
+          "evidence": "container=False model box=False"
+        },
+        {
+          "text": "The gene arrow is #54AB58 and arrowheads are filled polygons (the notched shape), not marker triangles",
+          "passed": false,
+          "evidence": "gene=False polygons=0 markers=False"
+        },
+        {
+          "text": "At most three distinct stroke widths are used, from the 0.25 / 0.9 / 1.85 pt family",
+          "passed": false,
+          "evidence": "widths(mm or pt)=[] -> pt=[]"
+        },
+        {
+          "text": "Stage headings are numbered '(1)', '(2)', '(3)' at about 6.5 pt in Helvetica/Arial",
+          "passed": false,
+          "evidence": "numbered=False 6.5pt=False helv=True sizes=[]"
+        },
+        {
+          "text": "The cartoon embedding (cell dots) sits on white, not inside a grey container",
+          "passed": false,
+          "evidence": "cells=0 inside grey rects=0"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 113.9667,
+        "stddev": 43.063,
+        "min": 66.0,
+        "max": 149.3
+      },
+      "tokens": {
+        "mean": 58149.6667,
+        "stddev": 10332.1661,
+        "min": 48981,
+        "max": 69345
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.2778,
+        "stddev": 0.0962,
+        "min": 0.1667,
+        "max": 0.3333
+      },
+      "time_seconds": {
+        "mean": 83.7333,
+        "stddev": 42.2723,
+        "min": 53.3,
+        "max": 132.0
+      },
+      "tokens": {
+        "mean": 34382.0,
+        "stddev": 912.5925,
+        "min": 33462,
+        "max": 35287
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.72",
+      "time_seconds": "+30.2",
+      "tokens": "+23768"
+    }
+  },
+  "notes": []
+}

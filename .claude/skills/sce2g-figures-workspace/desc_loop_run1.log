@@ -1,0 +1,86 @@
+Split: 12 train, 8 test (holdout=0.4)
+
+============================================================
+Iteration 1/5
+Description: Build publication figure panels in the visual style of the scE2G paper (Sheth, Qiu et al., Nature Genetics 2026) — the house design system for this lab's genomics figures. Use this skill whenever the user asks for a figure, panel, plot, chart, schematic, locus plot, heatmap, UMAP, motif logo, or "make this look like the scE2G / paper figures", whether in R (ggplot2) with real data, as a conceptual schematic drawn as SVG in Python, or in matplotlib — even if they don't say "scE2G", if the work sits in a project that has tokens.json / theme_sce2g.R or asks for Nature-style, print-size, publication-quality panels with consistent colours, fonts and stroke weights. It provides the tokens, a ggplot2 theme, an SVG schematic toolkit, per-component recipes measured from the paper, and a tool to verify a rendered PDF against those measurements.
+============================================================
+Train: 20/36 correct, precision=100% recall=11% accuracy=56% (71.7s)
+  [FAIL] rate=1/3 expected=True: quick one: plot the umap in embeddings/pbmc_umap.csv colored
+  [FAIL] rate=0/3 expected=True: I need a motif logo for the CTCF PWM (jaspar MA0139.1) with 
+  [FAIL] rate=0/3 expected=True: can u redo this ggplot so it looks like the scE2G figures? i
+  [FAIL] rate=0/3 expected=True: the point-range dot plot with CIs for GWAS enrichment per ce
+  [FAIL] rate=0/3 expected=True: I have results/auprc_by_distance.csv with columns predictor,
+  [FAIL] rate=1/3 expected=True: make me a locus plot for MYC in our BMMC multiome prediction
+  [PASS] rate=0/3 expected=False: which colors from tokens.json are safe to use for text on wh
+  [PASS] rate=0/3 expected=False: i have a matplotlib line chart of monthly revenue for the fi
+  [PASS] rate=0/3 expected=False: write me an R function that computes AUPRC and precision at 
+  [PASS] rate=0/3 expected=False: design a landing page mockup for our lab website with a hero
+  [PASS] rate=0/3 expected=False: run the fig4a_depth.R script and tell me if it still works a
+  [PASS] rate=0/3 expected=False: what's the difference between Kendall and Spearman correlati
+Test : 13/24 correct, precision=100% recall=8% accuracy=54% (0.0s)
+  [FAIL] rate=0/3 expected=True: Build a 46x46 heatmap of jaccard similarity between cell-typ
+  [FAIL] rate=0/3 expected=True: draw a conceptual overview schematic of our pipeline for fig
+  [FAIL] rate=0/3 expected=True: we're submitting to nature genetics and my supervisor wants 
+  [FAIL] rate=1/3 expected=True: ranked horizontal bars of PoPS scores for the genes near rs7
+  [PASS] rate=0/3 expected=False: summarize the methods section of refs/sce2g-2026.pdf, specif
+  [PASS] rate=0/3 expected=False: convert figures/fig3g_boxbar.pdf to a 300 dpi tiff for the j
+  [PASS] rate=0/3 expected=False: make a quick interactive plotly dashboard of our sequencing 
+  [PASS] rate=0/3 expected=False: my ggplot2 script errors with 'object .pt not found' when I 
+
+Improving description...
+Proposed (12.6s): Use this skill whenever a plot needs to match the scE2G paper (Sheth, Qiu et al., Nat Genet 2026) or this lab's genomics figure style. Triggers: any mention of scE2G, Sheth et al., "like Fig. 2c / panel 5h / the paper's figures", theme_sce2g, tokens.json, or restyling an existing ggplot/matplotlib panel to sit beside other paper panels. Also trigger on lab figure types even without the paper named: locus plots with enhancer–TSS arcs and ATAC tracks, UMAP triptychs with arrow axes, motif logos with variant alleles, AUPRC/precision bar or curve panels by predictor, GWAS enrichment point-range/beeswarm plots, heatmaps, violins, workflow schematics (SVG). Takes precedence over generic chart/dataviz guidance for this work: it supplies the measured palette, fonts, stroke weights, panel sizes, ggplot2 theme, svgkit, recipes and a PDF verifier. Not for non-genomics charts, stats code, or running scripts without changing a figure.
+
+============================================================
+Iteration 2/5
+Description: Use this skill whenever a plot needs to match the scE2G paper (Sheth, Qiu et al., Nat Genet 2026) or this lab's genomics figure style. Triggers: any mention of scE2G, Sheth et al., "like Fig. 2c / panel 5h / the paper's figures", theme_sce2g, tokens.json, or restyling an existing ggplot/matplotlib panel to sit beside other paper panels. Also trigger on lab figure types even without the paper named: locus plots with enhancer–TSS arcs and ATAC tracks, UMAP triptychs with arrow axes, motif logos with variant alleles, AUPRC/precision bar or curve panels by predictor, GWAS enrichment point-range/beeswarm plots, heatmaps, violins, workflow schematics (SVG). Takes precedence over generic chart/dataviz guidance for this work: it supplies the measured palette, fonts, stroke weights, panel sizes, ggplot2 theme, svgkit, recipes and a PDF verifier. Not for non-genomics charts, stats code, or running scripts without changing a figure.
+============================================================
+Train: 21/36 correct, precision=100% recall=17% accuracy=58% (50.9s)
+  [FAIL] rate=0/3 expected=True: the point-range dot plot with CIs for GWAS enrichment per ce
+  [FAIL] rate=0/3 expected=True: can u redo this ggplot so it looks like the scE2G figures? i
+  [FAIL] rate=1/3 expected=True: I need a motif logo for the CTCF PWM (jaspar MA0139.1) with 
+  [FAIL] rate=1/3 expected=True: quick one: plot the umap in embeddings/pbmc_umap.csv colored
+  [FAIL] rate=1/3 expected=True: I have results/auprc_by_distance.csv with columns predictor,
+  [FAIL] rate=0/3 expected=True: make me a locus plot for MYC in our BMMC multiome prediction
+  [PASS] rate=0/3 expected=False: which colors from tokens.json are safe to use for text on wh
+  [PASS] rate=0/3 expected=False: i have a matplotlib line chart of monthly revenue for the fi
+  [PASS] rate=0/3 expected=False: write me an R function that computes AUPRC and precision at 
+  [PASS] rate=0/3 expected=False: design a landing page mockup for our lab website with a hero
+  [PASS] rate=0/3 expected=False: run the fig4a_depth.R script and tell me if it still works a
+  [PASS] rate=0/3 expected=False: what's the difference between Kendall and Spearman correlati
+Test : 16/24 correct, precision=100% recall=33% accuracy=67% (0.0s)
+  [FAIL] rate=1/3 expected=True: Build a 46x46 heatmap of jaccard similarity between cell-typ
+  [PASS] rate=2/3 expected=True: draw a conceptual overview schematic of our pipeline for fig
+  [FAIL] rate=0/3 expected=True: ranked horizontal bars of PoPS scores for the genes near rs7
+  [FAIL] rate=1/3 expected=True: we're submitting to nature genetics and my supervisor wants 
+  [PASS] rate=0/3 expected=False: summarize the methods section of refs/sce2g-2026.pdf, specif
+  [PASS] rate=0/3 expected=False: convert figures/fig3g_boxbar.pdf to a 300 dpi tiff for the j
+  [PASS] rate=0/3 expected=False: my ggplot2 script errors with 'object .pt not found' when I 
+  [PASS] rate=0/3 expected=False: make a quick interactive plotly dashboard of our sequencing 
+
+Improving description...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/brandonlukas/.claude/plugins/cache/claude-plugins-official/skill-creator/85cce0381e78/skills/skill-creator/scripts/run_loop.py", line 328, in <module>
+    main()
+    ~~~~^^
+  File "/Users/brandonlukas/.claude/plugins/cache/claude-plugins-official/skill-creator/85cce0381e78/skills/skill-creator/scripts/run_loop.py", line 293, in main
+    output = run_loop(
+        eval_set=eval_set,
+    ...<11 lines>...
+        log_dir=log_dir,
+    )
+  File "/Users/brandonlukas/.claude/plugins/cache/claude-plugins-official/skill-creator/85cce0381e78/skills/skill-creator/scripts/run_loop.py", line 199, in run_loop
+    new_description = improve_description(
+        skill_name=name,
+    ...<6 lines>...
+        iteration=iteration,
+    )
+  File "/Users/brandonlukas/.claude/plugins/cache/claude-plugins-official/skill-creator/85cce0381e78/skills/skill-creator/scripts/improve_description.py", line 144, in improve_description
+    text = _call_claude(prompt, model)
+  File "/Users/brandonlukas/.claude/plugins/cache/claude-plugins-official/skill-creator/85cce0381e78/skills/skill-creator/scripts/improve_description.py", line 44, in _call_claude
+    raise RuntimeError(
+        f"claude -p exited {result.returncode}\nstderr: {result.stderr}"
+    )
+RuntimeError: claude -p exited 1
+stderr: 

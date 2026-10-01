@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123.47mm" height="83.61mm" viewBox="0 0 123.472 83.608">
+
+<rect width="123.472" height="83.608" fill="#FFFFFF"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="14.605" y="2.681">(1) Prepare single-cell</tspan><tspan x="14.605" y="5.221">multiome data</tspan></text>
+<polygon points="9.525,22.578 20.108,22.578 24.906,35.454 3.351,35.454" fill="#B7D8E2" stroke="none" stroke-width="0.000"/>
+<path d="M3.351 6.668 L3.351 28.257 L24.906 28.257" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<ellipse cx="9.772" cy="12.700" rx="4.868" ry="4.657" fill="#B9C0CB" transform="rotate(-15 9.772 12.700)"/>
+<ellipse cx="20.496" cy="14.217" rx="3.598" ry="5.750" fill="#B9C0CB" transform="rotate(12 20.496 14.217)"/>
+<ellipse cx="14.781" cy="22.684" rx="5.962" ry="3.951" fill="#7DBCC3" transform="rotate(-8 14.781 22.684)"/>
+<circle cx="7.726" cy="9.984" r="0.423" fill="#6A768B"/>
+<circle cx="12.136" cy="10.407" r="0.423" fill="#6A768B"/>
+<circle cx="9.948" cy="10.830" r="0.423" fill="#6A768B"/>
+<circle cx="21.237" cy="10.830" r="0.423" fill="#6A768B"/>
+<circle cx="18.979" cy="11.007" r="0.423" fill="#6A768B"/>
+<circle cx="6.491" cy="12.206" r="0.423" fill="#6A768B"/>
+<circle cx="12.912" cy="12.347" r="0.423" fill="#6A768B"/>
+<circle cx="8.502" cy="12.418" r="0.423" fill="#6A768B"/>
+<circle cx="10.513" cy="12.841" r="0.423" fill="#6A768B"/>
+<circle cx="18.133" cy="13.264" r="0.423" fill="#6A768B"/>
+<circle cx="20.355" cy="13.264" r="0.423" fill="#6A768B"/>
+<circle cx="22.789" cy="13.829" r="0.423" fill="#6A768B"/>
+<circle cx="12.136" cy="14.252" r="0.423" fill="#6A768B"/>
+<circle cx="6.914" cy="14.464" r="0.423" fill="#6A768B"/>
+<circle cx="9.172" cy="14.464" r="0.423" fill="#6A768B"/>
+<circle cx="10.936" cy="15.663" r="0.423" fill="#6A768B"/>
+<circle cx="18.344" cy="15.663" r="0.423" fill="#6A768B"/>
+<circle cx="20.779" cy="15.663" r="0.423" fill="#6A768B"/>
+<circle cx="8.502" cy="16.334" r="0.423" fill="#6A768B"/>
+<circle cx="22.789" cy="16.757" r="0.423" fill="#6A768B"/>
+<circle cx="20.779" cy="18.309" r="0.423" fill="#6A768B"/>
+<circle cx="13.582" cy="20.002" r="0.423" fill="#00909A"/>
+<circle cx="10.513" cy="21.237" r="0.423" fill="#00909A"/>
+<circle cx="16.157" cy="21.625" r="0.423" fill="#00909A"/>
+<circle cx="12.735" cy="21.766" r="0.423" fill="#00909A"/>
+<circle cx="17.921" cy="23.001" r="0.423" fill="#00909A"/>
+<circle cx="14.534" cy="23.424" r="0.423" fill="#00909A"/>
+<circle cx="11.712" cy="23.812" r="0.423" fill="#00909A"/>
+<circle cx="19.403" cy="23.812" r="0.423" fill="#00909A"/>
+<circle cx="16.792" cy="25.224" r="0.423" fill="#00909A"/>
+<circle cx="14.111" cy="25.647" r="0.423" fill="#00909A"/>
+<rect x="1.164" y="35.454" width="26.635" height="9.807" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="14.464" y="38.347">ATAC-seq fragment file</tspan></text>
+<text xml:space="preserve" font-family="Courier, 'Courier New', monospace" font-size="1.249" text-anchor="start" fill="#000000"><tspan x="2.505" y="40.428">Chr. 1 10011   10132  CGTAGCGG</tspan><tspan x="2.505" y="41.973">Chr. 1 10012   10151  ATGTCATC</tspan><tspan x="2.505" y="43.519">               ...</tspan></text>
+<rect x="1.164" y="46.320" width="26.635" height="11.501" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="14.464" y="48.613">RNA count matrix</tspan></text>
+<text xml:space="preserve" font-family="Courier, 'Courier New', monospace" font-size="1.249" text-anchor="start" fill="#000000"><tspan x="1.799" y="50.624">       CGTAGCGG   ATGTCATC     ...</tspan><tspan x="1.799" y="52.169">SAMD11         0          1    ...</tspan><tspan x="1.799" y="53.714">NOC2L          2          0    ...</tspan><tspan x="1.799" y="55.259">KLHL17         1          0    ...</tspan><tspan x="1.799" y="56.804">               ...</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="58.596" y="2.681">(2) Annotate peak–gene pairs</tspan></text>
+<rect x="37.500" y="6.209" width="42.122" height="18.344" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.745" text-anchor="start" fill="#000000"><tspan x="38.488" y="9.137">ABC score</tspan></text>
+<rect x="55.210" y="10.019" width="8.220" height="7.726" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<path d="M47.166 15.875 C49.918 15.875 49.437 13.582 50.606 13.582 C51.775 13.582 51.294 15.875 54.046 15.875 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M55.527 15.875 C58.603 15.875 58.065 10.724 59.372 10.724 C60.680 10.724 60.142 15.875 63.218 15.875 Z" fill="#006CAD" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M63.676 15.875 C65.511 15.875 65.190 11.783 65.969 11.783 C66.749 11.783 66.428 15.875 68.262 15.875 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M70.167 15.875 C71.593 15.875 71.343 12.312 71.949 12.312 C72.555 12.312 72.305 15.875 73.731 15.875 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M47.166 15.875 L73.060 15.875" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<rect x="47.202" y="16.545" width="6.738" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<rect x="55.527" y="16.545" width="7.691" height="0.917" fill="#006CAD" stroke="none" stroke-width="0.000"/>
+<rect x="63.676" y="16.545" width="4.586" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<polygon points="71.931,15.655 76.460,15.655 75.918,14.920 78.528,15.981 75.918,17.041 76.460,16.307 71.931,16.307" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="middle" fill="#000000"><tspan x="59.302" y="9.525">Activity</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="end" fill="#000000"><tspan x="46.637" y="13.441">Pseudobulk</tspan><tspan x="46.637" y="15.219">ATAC</tspan></text>
+<path d="M47.202 23.072 C52.917 23.072 56.797 22.507 59.302 21.766 C61.736 20.955 63.853 19.544 65.440 18.768 L71.931 18.768" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M59.302 15.875 L59.302 21.766" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.660 0.660"/>
+<circle cx="59.302" cy="21.766" r="0.318" fill="#000000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="end" fill="#000000"><tspan x="46.637" y="20.108">Contact ≈</tspan><tspan x="46.637" y="21.886">1/distance</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="start" fill="#000000"><tspan x="52.246" y="21.237">Contact</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="start" fill="#000000"><tspan x="63.324" y="22.049">ABC score =</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="middle" fill="#000000"><tspan x="74.577" y="21.237">A × C</tspan></text>
+<path d="M71.896 21.590 L77.223 21.590" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="middle" fill="#000000"><tspan x="74.577" y="23.177">Σ(A × C)</tspan></text>
+<rect x="37.500" y="25.647" width="42.122" height="14.005" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.745" text-anchor="start" fill="#000000"><tspan x="38.488" y="28.152">Chromatin</tspan><tspan x="38.488" y="30.311">accessibility</tspan></text>
+<rect x="49.777" y="34.184" width="19.015" height="2.011" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<rect x="69.956" y="30.092" width="3.951" height="5.468" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<path d="M47.166 34.149 C49.918 34.149 49.437 31.856 50.606 31.856 C51.775 31.856 51.294 34.149 54.046 34.149 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M55.527 34.149 C58.603 34.149 58.065 28.998 59.372 28.998 C60.680 28.998 60.142 34.149 63.218 34.149 Z" fill="#006CAD" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M63.676 34.149 C65.511 34.149 65.190 30.057 65.969 30.057 C66.749 30.057 66.428 34.149 68.262 34.149 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M70.167 34.149 C71.593 34.149 71.343 30.586 71.949 30.586 C72.555 30.586 72.305 34.149 73.731 34.149 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M47.166 34.149 L73.060 34.149" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<rect x="47.202" y="34.819" width="6.738" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<rect x="55.527" y="34.819" width="7.691" height="0.917" fill="#006CAD" stroke="none" stroke-width="0.000"/>
+<rect x="63.676" y="34.819" width="4.586" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<polygon points="71.931,33.928 76.460,33.928 75.918,33.194 78.528,34.255 75.918,35.315 76.460,34.581 71.931,34.581" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="middle" fill="#000000"><tspan x="71.826" y="27.834">ATAC signal</tspan><tspan x="71.826" y="29.494">at promoter</tspan></text>
+<path d="M50.624 36.830 L67.945 36.830" fill="none" stroke="#000000" stroke-width="0.162" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon points="51.153,36.749 50.514,36.749 50.765,36.442 49.777,36.830 50.765,37.218 50.514,36.911 51.153,36.911" fill="#000000" stroke="none" stroke-width="0.000"/>
+<polygon points="67.416,36.749 68.055,36.749 67.804,36.442 68.792,36.830 67.804,37.218 68.055,36.911 67.416,36.911" fill="#000000" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="middle" fill="#000000"><tspan x="59.302" y="38.700">Number of peaks within 5 kb</tspan></text>
+<rect x="37.500" y="40.816" width="42.122" height="13.229" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.745" text-anchor="start" fill="#000000"><tspan x="38.488" y="43.498">Gene</tspan><tspan x="38.488" y="45.657">density</tspan></text>
+<rect x="59.443" y="47.166" width="12.524" height="1.799" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<path d="M47.166 46.919 C49.918 46.919 49.437 44.626 50.606 44.626 C51.775 44.626 51.294 46.919 54.046 46.919 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M55.527 46.919 C58.603 46.919 58.065 41.769 59.372 41.769 C60.680 41.769 60.142 46.919 63.218 46.919 Z" fill="#006CAD" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M63.676 46.919 C65.511 46.919 65.190 42.827 65.969 42.827 C66.749 42.827 66.428 46.919 68.262 46.919 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M70.167 46.919 C71.593 46.919 71.343 43.356 71.949 43.356 C72.555 43.356 72.305 46.919 73.731 46.919 Z" fill="#85C0E1" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M47.166 46.919 L73.060 46.919" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<rect x="47.202" y="47.590" width="6.738" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<rect x="55.527" y="47.590" width="7.691" height="0.917" fill="#006CAD" stroke="none" stroke-width="0.000"/>
+<rect x="63.676" y="47.590" width="4.586" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<polygon points="71.931,46.699 76.460,46.699 75.918,45.965 78.528,47.025 75.918,48.086 76.460,47.352 71.931,47.352" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<polygon points="66.005,47.886 67.269,47.886 67.000,47.521 68.298,48.048 67.000,48.576 67.269,48.211 66.005,48.211" fill="#6A768B" stroke="none" stroke-width="0.000"/>
+<polygon points="71.296,47.886 70.032,47.886 70.302,47.521 69.003,48.048 70.302,48.576 70.032,48.211 71.296,48.211" fill="#6A768B" stroke="none" stroke-width="0.000"/>
+<path d="M59.478 49.107 L59.478 49.953 M71.896 49.107 L71.896 49.953 M59.478 49.530 L71.896 49.530" fill="none" stroke="#000000" stroke-width="0.162" stroke-linecap="butt" stroke-linejoin="miter"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="middle" fill="#000000"><tspan x="65.052" y="51.506">Number of peaks, number of TSSs</tspan><tspan x="65.052" y="53.165">between peak and gene</tspan></text>
+<rect x="37.465" y="55.210" width="42.122" height="17.498" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.745" text-anchor="start" fill="#000000"><tspan x="38.488" y="57.961">Kendall</tspan><tspan x="38.488" y="60.120">correlation</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="middle" fill="#000000"><tspan x="63.253" y="57.961">Peak accessibility × gene expression</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="start" fill="#000000"><tspan x="47.096" y="63.888">Cell 1</tspan></text>
+<rect x="54.434" y="60.149" width="6.562" height="4.198" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<path d="M54.716 63.712 C57.101 63.712 56.683 60.466 57.697 60.466 C58.710 60.466 58.293 63.712 60.678 63.712 Z" fill="#006CAD" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M51.929 63.712 L67.310 63.712" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<rect x="65.722" y="60.466" width="4.374" height="1.940" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<path d="M67.486 61.225 C68.192 60.378 68.721 61.577 69.744 60.590" fill="none" stroke="#54AB58" stroke-width="0.123" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M66.146 62.001 C67.134 61.083 68.016 62.565 69.074 61.648 C69.427 61.366 69.391 61.225 69.744 61.507" fill="none" stroke="#54AB58" stroke-width="0.123" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M58.764 60.078 C60.175 58.244 64.664 58.173 66.075 60.396" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.660 0.660"/>
+<polygon points="66.216,63.421 70.745,63.421 70.203,62.686 72.813,63.747 70.203,64.807 70.745,64.073 66.216,64.073" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.437" text-anchor="start" fill="#000000"><tspan x="47.096" y="70.309">Cell 2</tspan></text>
+<rect x="55.280" y="67.698" width="4.339" height="3.034" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<path d="M55.598 70.132 C57.122 70.132 56.855 67.980 57.503 67.980 C58.150 67.980 57.884 70.132 59.408 70.132 Z" fill="#006CAD" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M51.929 70.132 L67.310 70.132" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<rect x="65.722" y="66.887" width="4.374" height="1.905" fill="#B9C0CB" stroke="none" stroke-width="0.000"/>
+<path d="M66.781 67.769 C67.310 68.756 68.016 68.192 68.545 67.698 C68.897 67.416 69.039 67.345 69.250 67.627" fill="none" stroke="#54AB58" stroke-width="0.123" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M58.144 67.627 C59.555 65.793 64.664 65.722 66.075 66.816" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.660 0.660"/>
+<polygon points="66.216,69.841 70.745,69.841 70.203,69.107 72.813,70.168 70.203,71.228 70.745,70.494 66.216,70.494" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<rect x="42.157" y="73.625" width="32.385" height="8.502" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.745" text-anchor="end" fill="#000000"><tspan x="58.279" y="76.059">Promoter class</tspan><tspan x="58.279" y="78.218">ubiquitously</tspan><tspan x="58.279" y="80.377">expressed?</tspan></text>
+<polygon points="59.655,77.100 67.689,77.100 66.604,75.631 71.826,77.752 66.604,79.873 67.689,78.405 59.655,78.405" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<path d="M78.176 5.221 L82.479 5.221 L82.479 82.938 L78.176 82.938" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M82.479 16.757 L94.509 16.757" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/><polygon points="93.804,16.593 94.421,16.593 94.148,16.224 95.461,16.757 94.148,17.290 94.421,16.921 93.804,16.921" fill="#000000" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="104.281" y="2.681">(3) Apply scE2G to make</tspan><tspan x="104.281" y="5.221">genome-wide enhancer–</tspan><tspan x="104.281" y="7.761">gene predictions</tspan></text>
+<rect x="95.426" y="12.418" width="17.286" height="8.643" fill="#9C4787" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#FFFFFF"><tspan x="104.069" y="17.392">scE2G</tspan></text>
+<polygon points="95.426,21.061 112.712,21.061 122.767,26.952 85.372,26.952" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<rect x="85.513" y="26.952" width="37.253" height="16.545" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="104.069" y="24.659">Model training</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="start" fill="#000000"><tspan x="88.194" y="29.563">(1)</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="start" fill="#000000"><tspan x="91.969" y="29.281">Compute features on K562</tspan><tspan x="91.969" y="31.821">multiome data</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="start" fill="#000000"><tspan x="88.194" y="35.631">(2)</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="start" fill="#000000"><tspan x="91.969" y="35.384">Train logistic regression</tspan><tspan x="91.969" y="37.924">classifier to predict CRISPRi-</tspan><tspan x="91.969" y="40.464">validated enhancers</tspan></text>
+<rect x="85.513" y="45.332" width="37.253" height="22.225" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="104.140" y="48.154">CRISPR perturbation data</tspan></text>
+<path d="M102.094 52.387 C95.178 53.446 91.959 57.503 90.170 61.842" fill="none" stroke="#000000" stroke-width="0.325" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.653 0.653"/>
+<rect x="89.323" y="61.912" width="1.693" height="0.423" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M88.759 61.242 C89.253 61.277 89.676 61.207 90.382 60.960 L90.734 60.396 C90.840 59.020 91.934 59.090 91.793 60.149 C91.687 60.854 91.158 61.242 90.734 61.242" fill="none" stroke="#42566B" stroke-width="0.099" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M102.094 52.387 C97.858 53.446 95.887 57.503 94.791 61.842" fill="none" stroke="#000000" stroke-width="0.325" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.653 0.653"/>
+<rect x="93.945" y="61.912" width="1.693" height="0.423" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M93.380 61.242 C93.874 61.277 94.297 61.207 95.003 60.960 L95.356 60.396 C95.462 59.020 96.555 59.090 96.414 60.149 C96.308 60.854 95.779 61.242 95.356 61.242" fill="none" stroke="#42566B" stroke-width="0.099" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M100.612 52.387 C104.827 53.446 106.789 57.503 107.879 61.842" fill="none" stroke="#000000" stroke-width="0.325" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.653 0.653"/>
+<rect x="107.033" y="61.912" width="1.693" height="0.423" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M106.468 61.242 C106.962 61.277 107.386 61.207 108.091 60.960 L108.444 60.396 C108.550 59.020 109.643 59.090 109.502 60.149 C109.396 60.854 108.867 61.242 108.444 61.242" fill="none" stroke="#42566B" stroke-width="0.099" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M100.612 52.387 C107.508 53.446 110.718 57.503 112.501 61.842" fill="none" stroke="#000000" stroke-width="0.325" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.653 0.653"/>
+<rect x="111.654" y="61.912" width="1.693" height="0.423" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M111.090 61.242 C111.584 61.277 112.007 61.207 112.712 60.960 L113.065 60.396 C113.171 59.020 114.265 59.090 114.124 60.149 C114.018 60.854 113.489 61.242 113.065 61.242" fill="none" stroke="#42566B" stroke-width="0.099" stroke-linecap="butt" stroke-linejoin="miter"/>
+<ellipse cx="104.599" cy="50.553" rx="1.623" ry="1.270" fill="#8B98AC" transform="rotate(-25 104.599 50.553)"/>
+<path d="M98.425 52.564 C98.072 50.624 100.365 49.601 102.129 50.236 C103.187 50.624 103.858 51.576 104.175 52.634 C104.422 53.728 102.482 54.328 100.894 53.975 C99.483 53.693 98.637 53.411 98.425 52.564 Z" fill="#42566B" stroke="none" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.745" text-anchor="start" fill="#000000"><tspan x="86.078" y="51.823">dCas9-KRAB</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.745" text-anchor="start" fill="#000000"><tspan x="107.915" y="51.717">466 positives</tspan><tspan x="107.915" y="53.876">9,876 negatives</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.591" text-anchor="middle" fill="#000000"><tspan x="101.459" y="57.961">gRNAs to</tspan><tspan x="101.459" y="59.930">DHS elements</tspan></text>
+<path d="M88.724 63.394 L114.582 63.394" fill="none" stroke="#000000" stroke-width="0.081" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon points="99.131,63.103 101.895,63.103 101.353,62.369 103.964,63.429 101.353,64.490 101.895,63.756 99.131,63.756" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="90.099" y="66.005">?</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="94.580" y="66.005">?</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="107.915" y="66.005">?</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.053" text-anchor="middle" fill="#000000"><tspan x="112.219" y="66.005">?</tspan></text>
+<path d="M27.799 38.312 L30.692 38.312 L30.692 31.115 L36.936 31.115" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/><polygon points="36.230,30.951 36.848,30.951 36.575,30.582 37.887,31.115 36.575,31.648 36.848,31.279 36.230,31.279" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M27.799 42.333 L33.514 42.333" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M33.514 47.801 L33.514 15.663 L36.936 15.663" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/><polygon points="36.230,15.499 36.848,15.499 36.575,15.130 37.887,15.663 36.575,16.196 36.848,15.827 36.230,15.827" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M33.514 47.801 L36.936 47.801" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/><polygon points="36.230,47.637 36.848,47.637 36.575,47.268 37.887,47.801 36.575,48.335 36.848,47.965 36.230,47.965" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M27.799 54.151 L30.692 54.151 L30.692 64.241 L36.936 64.241" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/><polygon points="36.230,64.077 36.848,64.077 36.575,63.708 37.887,64.241 36.575,64.774 36.848,64.405 36.230,64.405" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M30.692 42.333 L30.692 54.151" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/>
+</svg>

@@ -1,0 +1,9 @@
+cell_type,enrichment,lo,hi,group
+Pancreatic polypeptide cell,15.688,11.87,20.732,islet
+Pancreatic beta cells,15.248,11.634,19.985,islet
+Pancreatic delta cells,13.423,9.969,18.069,other
+Pancreatic endothelial cells,13.009,9.147,18.498,other
+Pancreatic alpha cells,12.654,9.574,16.723,other
+Pancreatic acinar cells,12.203,9.018,16.513,other
+Pancreatic duct cells,11.483,8.191,16.099,other
+Pancreatic immune cells,9.001,5.999,13.505,other

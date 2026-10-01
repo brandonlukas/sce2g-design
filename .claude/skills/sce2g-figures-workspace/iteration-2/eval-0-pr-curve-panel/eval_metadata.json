@@ -1,0 +1,13 @@
+{
+  "eval_id": 0,
+  "eval_name": "pr-curve-panel",
+  "prompt": "I have precision-recall curves for four predictors in pr_curves.csv (columns predictor_id, recall, precision; the ids are the scE2G paper's predictor numbers 1, 2, 5 and 15). Make a publication PR-curve panel in the scE2G figure style: square panel, dashed line at the operating recall of 0.7, dashed chance line at precision 0.06, curves labelled by their number at the right end, title 'CRISPR benchmark (training)'. Save as pr_panel.pdf and pr_panel.png.",
+  "assertions": [
+    "pr_panel.pdf and pr_panel.png both exist",
+    "Axis lines and ticks are 0.25 pt black in the PDF",
+    "Curves are 0.42 pt strokes in the fixed predictor colours (#792374, #006479, #0096A0, #404040)",
+    "Reference lines are 0.5 pt with a 2 to 2.25 pt dash",
+    "Text sizes are 5.5 pt tick labels and 6.5 pt titles, nothing below 4.5 pt",
+    "Curve index numbers are drawn at the curve ends in the curve's own colour"
+  ]
+}

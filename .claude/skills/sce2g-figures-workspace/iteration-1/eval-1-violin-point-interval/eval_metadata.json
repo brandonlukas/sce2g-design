@@ -1,0 +1,13 @@
+{
+  "eval_id": 1,
+  "eval_name": "violin-point-interval",
+  "prompt": "eqtl_enrichment.csv has one row per eQTL variant-biosample pair with columns category (unmatched / same_lineage / same_cell_type) and enrichment. Plot the three distributions as violins with a median point-interval, in the style of Fig. 5b of the scE2G paper, with significance brackets between the groups (use a Wilcoxon test and show the P values), category labels with n under the axis, and save as eqtl_violin.pdf and .png.",
+  "assertions": [
+    "eqtl_violin.pdf and eqtl_violin.png both exist",
+    "Violins are filled #8B98AC / #9A3983 / #260032 with no outline stroke",
+    "Point-interval lines are two weights, about 0.77 pt and 1.79 pt, in black",
+    "Brackets are 0.25 pt lines with stars below and P values above",
+    "Axis lines are 0.25 pt and text sizes include 5.5 and 6.5 pt with nothing below 4.5 pt (superscripts excepted)",
+    "Category labels with italic n appear under the axis"
+  ]
+}

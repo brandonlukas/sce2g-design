@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "pr_panel.pdf and pr_panel.png both exist",
+      "passed": true,
+      "evidence": "pdf=True png=True"
+    },
+    {
+      "text": "Axis lines and ticks are 0.25 pt black in the PDF",
+      "passed": false,
+      "evidence": "strokes=[((0.5, '#000000'), 14), ((1.0, '#d62728'), 1), ((1.0, '#1f77b4'), 1), ((1.0, '#2ca02c'), 1), ((1.0, '#7f7f7f'), 1), ((0.5, '#808080'), 1)]"
+    },
+    {
+      "text": "Curves are 0.42 pt strokes in the fixed predictor colours (#792374, #006479, #0096A0, #404040)",
+      "passed": false,
+      "evidence": "0.42 pt colours=[]"
+    },
+    {
+      "text": "Reference lines are 0.5 pt with a 2 to 2.25 pt dash",
+      "passed": true,
+      "evidence": "dashes=[(('1.85,.8', 0.5), 2)]"
+    },
+    {
+      "text": "Text sizes are 5.5 pt tick labels and 6.5 pt titles, nothing below 4.5 pt",
+      "passed": false,
+      "evidence": "sizes=[6.0, 7.0, 8.4]"
+    },
+    {
+      "text": "Curve index numbers are drawn at the curve ends in the curve's own colour",
+      "passed": false,
+      "evidence": "coloured glyphs=0"
+    }
+  ],
+  "pass_rate": 0.3333333333333333,
+  "summary": {
+    "pass_rate": 0.3333333333333333,
+    "passed": 2,
+    "failed": 4,
+    "total": 6
+  }
+}

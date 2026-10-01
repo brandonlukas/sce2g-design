@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119.94mm" height="45.16mm" viewBox="0 0 119.944 45.156">
+<defs><marker id="ah" viewBox="0 0 4 4" refX="3.6" refY="2" markerWidth="1.3" markerHeight="1.3" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L4,2 L0,4 z" fill="#000000"/></marker></defs>
+<rect width="119.944" height="45.156" fill="#FFFFFF"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.293" text-anchor="middle" fill="#000000"><tspan x="17.639" y="4.586">(1) Single-cell</tspan><tspan x="17.639" y="7.338">multiome data</tspan></text>
+<circle cx="15.072" cy="20.680" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="12.378" cy="20.144" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="13.990" cy="17.767" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="18.999" cy="18.585" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="14.686" cy="19.879" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="17.960" cy="18.285" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="16.453" cy="16.469" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="13.674" cy="17.400" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="11.988" cy="16.127" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="10.910" cy="17.948" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="14.267" cy="17.637" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="14.999" cy="15.907" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="14.561" cy="18.875" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="16.910" cy="16.712" r="0.563" fill="#1F84FF" stroke="none" stroke-width="0.000"/>
+<circle cx="26.873" cy="19.391" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="26.760" cy="19.323" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="25.022" cy="25.606" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="24.309" cy="24.680" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="28.314" cy="22.372" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="28.596" cy="24.770" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="29.792" cy="22.682" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="26.162" cy="21.624" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="25.328" cy="23.164" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="25.918" cy="25.892" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="24.621" cy="21.250" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="26.107" cy="19.570" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="29.693" cy="19.976" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="26.840" cy="21.779" r="0.563" fill="#F40014" stroke="none" stroke-width="0.000"/>
+<circle cx="22.863" cy="28.916" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="22.833" cy="29.844" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="19.244" cy="29.781" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="21.591" cy="29.182" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="19.484" cy="31.738" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="22.741" cy="28.814" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="23.509" cy="32.378" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="18.133" cy="31.629" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="18.576" cy="33.425" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="20.479" cy="30.619" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="18.968" cy="30.650" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="19.196" cy="29.453" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="23.340" cy="29.143" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<circle cx="14.823" cy="30.948" r="0.563" fill="#00BF2B" stroke="none" stroke-width="0.000"/>
+<path d="M5.644 38.100 L5.644 31.671" fill="none" stroke="#000000" stroke-width="0.176" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon points="5.644,30.868 6.075,31.921 5.644,31.671 5.214,31.921" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M5.644 37.941 L12.039 37.941" fill="none" stroke="#000000" stroke-width="0.176" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon points="12.841,37.941 11.788,38.372 12.039,37.941 11.788,37.511" fill="#000000" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.940" text-anchor="start" fill="#000000"><tspan x="5.592" y="40.534">UMAP1</tspan></text>
+<text font-family="Helvetica, Arial, sans-serif" font-size="1.940" transform="rotate(-90 4.374 37.677)" x="4.374" y="37.677">UMAP2</text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.293" text-anchor="middle" fill="#000000"><tspan x="59.972" y="4.586">(2) Candidate</tspan><tspan x="59.972" y="7.338">enhancer–gene pairs</tspan></text>
+<rect x="41.628" y="10.583" width="36.689" height="31.044" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.799" text-anchor="start" fill="#000000"><tspan x="43.744" y="14.464">Pseudobulk ATAC peaks × genes</tspan></text>
+<path d="M55.033 32.456 C55.033 21.026 70.556 21.026 70.556 32.456" fill="none" stroke="#000000" stroke-width="0.176" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="0.706 0.706"/>
+<path d="M44.450 32.456 C46.708 32.456 46.313 30.339 47.272 30.339 C48.232 30.339 47.837 32.456 50.094 32.456 Z" fill="#85C0E1" stroke="none" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M51.506 32.456 C54.328 32.456 53.834 27.517 55.033 27.517 C56.233 27.517 55.739 32.456 58.561 32.456 Z" fill="#006CAD" stroke="none" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M59.972 32.456 C61.948 32.456 61.602 29.281 62.442 29.281 C63.281 29.281 62.936 32.456 64.911 32.456 Z" fill="#85C0E1" stroke="none" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M44.450 32.456 L70.556 32.456" fill="none" stroke="#000000" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<rect x="44.450" y="33.126" width="5.644" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<rect x="51.506" y="33.126" width="7.056" height="0.917" fill="#006CAD" stroke="none" stroke-width="0.000"/>
+<rect x="59.972" y="33.126" width="4.939" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<polygon points="69.850,32.235 74.132,32.235 73.589,31.501 76.200,32.561 73.589,33.622 74.132,32.888 69.850,32.888" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.587" text-anchor="middle" fill="#000000"><tspan x="55.033" y="37.042">Enhancer</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.587" text-anchor="middle" fill="#000000"><tspan x="72.672" y="37.042">Gene</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.587" text-anchor="middle" fill="#000000"><tspan x="62.794" y="23.283">Pair?</tspan></text>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.293" text-anchor="middle" fill="#000000"><tspan x="102.306" y="4.586">(3) Model prediction</tspan></text>
+<rect x="92.428" y="12.700" width="19.756" height="7.761" fill="#9C4787" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="2.293" text-anchor="middle" fill="#FFFFFF"><tspan x="102.306" y="17.392">scE2G</tspan></text>
+<path d="M102.306 20.461 L102.306 24.130" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon points="102.306,25.047 101.773,23.735 102.306,24.130 102.838,23.735" fill="#000000" stroke="none" stroke-width="0.000"/>
+<rect x="84.667" y="24.694" width="35.278" height="16.933" fill="#DEDFE1" stroke="none" stroke-width="0.000"/>
+<text xml:space="preserve" font-family="Helvetica, Arial, sans-serif" font-size="1.799" text-anchor="middle" fill="#000000"><tspan x="102.306" y="28.222">Enhancer–gene predictions</tspan></text>
+<path d="M87.489 36.689 C89.464 36.689 89.119 34.925 89.958 34.925 C90.798 34.925 90.452 36.689 92.428 36.689 Z" fill="#85C0E1" stroke="none" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M93.839 36.689 C96.097 36.689 95.702 33.514 96.661 33.514 C97.621 33.514 97.226 36.689 99.483 36.689 Z" fill="#006CAD" stroke="none" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M101.600 36.689 C103.293 36.689 102.997 34.572 103.717 34.572 C104.436 34.572 104.140 36.689 105.833 36.689 Z" fill="#85C0E1" stroke="none" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M87.489 36.689 L110.772 36.689" fill="none" stroke="#000000" stroke-width="0.088" stroke-linecap="butt" stroke-linejoin="miter"/>
+<rect x="87.489" y="37.359" width="4.939" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<rect x="93.839" y="37.359" width="5.644" height="0.917" fill="#006CAD" stroke="none" stroke-width="0.000"/>
+<rect x="101.600" y="37.359" width="4.233" height="0.917" fill="#85C0E1" stroke="none" stroke-width="0.000"/>
+<polygon points="110.067,36.468 114.348,36.468 113.806,35.734 116.417,36.795 113.806,37.855 114.348,37.121 110.067,37.121" fill="#54AB58" stroke="none" stroke-width="0.000"/>
+<path d="M96.661 36.689 C96.661 29.545 110.772 29.545 110.772 36.689" fill="none" stroke="#792374" stroke-width="0.318" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M89.958 36.689 C89.958 32.403 110.772 32.403 110.772 36.689" fill="none" stroke="#792374" stroke-width="0.318" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path d="M35.631 16.581 L41.275 16.581" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon points="41.275,16.417 41.892,16.417 41.620,16.047 42.932,16.581 41.620,17.114 41.892,16.745 41.275,16.745" fill="#000000" stroke="none" stroke-width="0.000"/>
+<path d="M78.669 16.581 L92.075 16.581" fill="none" stroke="#000000" stroke-width="0.328" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon points="92.075,16.417 92.692,16.417 92.420,16.047 93.732,16.581 92.420,17.114 92.692,16.745 92.075,16.745" fill="#000000" stroke="none" stroke-width="0.000"/>
+</svg>

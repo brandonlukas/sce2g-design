@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {
+      "run_id": "eval-0-pr-curve-panel-with_skill-run-1",
+      "feedback": "looks great but I think we should save as SVG and high-res PNG (like dpi = 900) as these are my preferred outputs to work with. I think the Recall label should have an n = #, like Recall (n = 461)",
+      "timestamp": "2026-09-05T17:24:28.790Z"
+    },
+    {
+      "run_id": "eval-1-violin-point-interval-with_skill-run-1",
+      "feedback": "Unmatched is 1 line, while other labels (Same lineage, Same cell type) are two lines. the n = # lines are all aligned. But this means there is a space/blank line between Unmatched and its n = line. In the reference (Fig. 5b) this doesn't happen. ",
+      "timestamp": "2026-09-05T17:24:28.790Z"
+    },
+    {
+      "run_id": "eval-2-pipeline-schematic-with_skill-run-1",
+      "feedback": "The PNG looks very high-res which is nice! ",
+      "timestamp": "2026-09-05T17:24:28.790Z"
+    }
+  ],
+  "status": "in_progress"
+}
